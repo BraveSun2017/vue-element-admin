@@ -20,6 +20,8 @@ import './permission' // permission control
 import './mock' // simulation data
 
 import * as filters from './filters' // global filters
+import axios from 'axios';
+Vue.prototype.$axios = axios;
 
 Vue.use(Element, {
   size: Cookies.get('size') || 'medium', // set element-ui default size
